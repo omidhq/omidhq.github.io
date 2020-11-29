@@ -1,1 +1,0 @@
-# Thank you <span class="highlight">Reda</span>, for everything!
