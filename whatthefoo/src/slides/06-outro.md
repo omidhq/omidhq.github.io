@@ -1,1 +1,0 @@
-# Thank you *Reda*, for everything!
