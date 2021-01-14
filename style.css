@@ -16,7 +16,7 @@
     /* colors */
     --true-blue: #0466c8ff;
     --usafa-blue: #0353a4ff;
-    --dark-cornflower-blue: #023e7dff;
+    --dark-cornflower-blue: #023e7d;
     --oxford-blue: #002855ff;
     --dark-bg: #001233ff;
     --independence: #33415cff;
@@ -24,8 +24,8 @@
     --roman-silver: #7d8597ff;
     --manatee: #979dacff;
     --dark-color: #1D3557;
-    --medium-color: rgb(69, 123, 157);
-    --light-color: rgb(168, 218, 220);
+    --medium-color: #457b9d;
+    --light-color: #a8dadc;
     --white-color: rgb(241, 250, 238);
     --red: rgb(230, 57, 70);
 }
@@ -112,6 +112,7 @@ nav .icon:hover::after{
 
 
 
+
 header{
     grid-row: 1/3;
     background-color: var(--oxford-blue);
@@ -135,9 +136,11 @@ header .title{
     font-weight: var(--wght-regular);
     font-size: 4.8rem;
     letter-spacing: 0.2rem;
-    margin-bottom: 2rem;
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
+}
+.title h1 a{
+    padding: 1rem 0 2rem 0;
 }
 
 
@@ -444,6 +447,14 @@ footer a{
     padding: 2rem;
     color: var(--light-color);
 }
+.modal div a{
+    display: inline;
+    border-bottom: 1px dashed var(--light-color);
+}
+.modal div a:hover{
+    color: var(--white-color);
+    border-bottom-color: var(--white-color);
+}
 .modal div h3{
     font-size: 1.8rem;
     color: var(--white-color);
@@ -472,6 +483,18 @@ footer a{
     background-color: #33415C;
 }
 
+div.social-contact{
+    padding-left: 0;
+}
+div.social-contact a{
+    display: inline;
+    padding: 1rem 0.5rem;
+    font-size: 3rem;
+    border-bottom: none;
+}
+.social-contact a:hover{
+    color: var(--white-color);
+}
 
 
 .light-mode, .light-mode nav, .light-mode header, .light-mode footer, .light-mode #work-modal, .light-mode #language-modal{
