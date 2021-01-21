@@ -560,6 +560,9 @@ div.social-contact a{
         border-top: 2px var(--medium-color) solid;
         grid-row: 3/4;
     }
+    footer{
+        height: 3rem;
+    }
 }
 
 
