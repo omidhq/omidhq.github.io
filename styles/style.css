@@ -18,7 +18,7 @@
     --usafa-blue: #0353a4ff;
     --dark-cornflower-blue: #023e7d;
     --oxford-blue: #002855ff;
-    --dark-bg: #001233ff;
+    --dark-bg: #001233;
     --independence: #33415cff;
     --black-coral: #5c677dff;
     --roman-silver: #7d8597ff;
@@ -45,8 +45,8 @@ body{
 .page-wrapper{
     background-color: var(--dark-bg);
     display: grid;
-    grid-template-columns: 6rem minmax(25rem, 36%) minmax(30rem, 1fr);
-    grid-template-rows: 4rem 1fr 4rem;
+    grid-template-columns: 6rem minmax(25rem, 41%) minmax(30rem, 1fr);
+    grid-template-rows: 3rem 1fr 5rem;
     height: 100%;
 }
 
@@ -116,7 +116,7 @@ nav .icon:hover::after{
 header{
     grid-row: 1/3;
     background-color: var(--oxford-blue);
-    border-right: 2px solid var(--medium-color);
+    border-bottom: 2px solid var(--medium-color);
     display: flex;
     flex-direction: column;
     padding: 1rem 4rem 2rem;
@@ -150,8 +150,8 @@ header:hover h1{
 
 h2.tagline{
     font-weight: var(--wght-medium);
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    line-height: 2;
     color: var(--light-color);
     transition: all 0.3s ease-in-out;
 }
@@ -165,8 +165,11 @@ header svg{
 
 
 .top-bar{
-    border-bottom: 1px solid var(--dark-color);
-    padding: 1rem 0 0.5rem 2rem;
+    background-color: var(--oxford-blue);
+    border-bottom: 2px solid var(--medium-color);
+    padding: 0 0 0 2rem;
+    display: flex;
+    align-items: center;
 }
 .top-bar p{
     margin-bottom: 0;
@@ -176,12 +179,14 @@ header svg{
 }
 
 main{
+    grid-row: 2/4;
     overflow-y: auto;
+    border-left: 2px solid var(--medium-color);
 }
 .log{
     width: 100%;
     flex-grow:1;
-    padding:2rem 2rem 0 2rem
+    padding:2rem 2rem 0 2rem;
 }
 .log p{
     font-size: 1.6rem;
@@ -234,20 +239,26 @@ main{
 
 
 footer{
-    grid-column: 1/4;
-    background-color: var(--oxford-blue);
-    border-top: 1px solid var(--medium-color);
-    display: grid;
-    grid-template-columns: 1fr 0.2fr;
+    grid-column: 1/3;
+    background: rgb(29,53,87);
+    display: flex;
+    align-items: center;
 }
 footer p{
+    text-align: center;
     margin-bottom: 0;
-    padding: 0 0 0 1.2rem;
-    font-size: 1.4rem;
+    padding: 0 1.2rem 0 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1;
 }
 footer a{
     display: inline-block;
-    padding: 1.1rem 0 0.5rem;
+    padding: 0.2rem 0 0.3rem;
+}
+.nav-footer{
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
 }
 .social{
     padding-right: 2rem;
@@ -509,47 +520,83 @@ div.social-contact a{
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 912px) {
     .page-wrapper{
+        min-height: 80rem;
         display: grid;
-        grid-template-rows: 14rem 4rem 1fr 0.2fr;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .title h1{
-        float: left;
-    }
-    .title h2{
-        float: right;
+        grid-template-columns: 6rem 1fr;
+        grid-template-rows: 1rem 1fr 1fr;
     }
     .top-bar{
-        grid-column: 1/4;
-        grid-row: 2/3;
-    }
-    nav{
         display: none;
     }
     header{
-        grid-column: 1/4;
-        grid-row: 1/2;
+        border-bottom: none;
+        padding: 3rem 1.4rem 2rem;
+    }
+    header .title{
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title h1{
+        font-size: 4rem;
+    }
+    h2.tagline{
+        font-size:1.6rem;
+        line-height: 1.5;
+    }
+    h2.tagline span{
+        display: block;
     }
     header svg{
         display: none;
     }
     main{
+        grid-column: 1/3;
+        border-left: none;
+        border-top: 2px var(--medium-color) solid;
         grid-row: 3/4;
-        grid-column: 1/4;
-    }
-    footer{
-        display: flex;
-        justify-content: center;
-    }
-    .social{
-        display: none;
     }
 }
 
+
 @media only screen and (max-width: 600px) {
-    h2.tagline{
+    .page-wrapper{
+        min-height: 80rem;
+        display: grid;
+        grid-template-columns: 6rem 1fr;
+        grid-template-rows: 1rem 1fr 1fr;
+    }
+    .top-bar{
         display: none;
+    }
+    header{
+        border-bottom: none;
+        padding: 1rem 1.4rem 2rem;
+    }
+    header .title{
+        padding-top: 0;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+    h2.tagline{
+        font-size:1.1rem;
+        line-height: 1.5;
+    }
+    h2.tagline span{
+        display: block;
+    }
+    header svg{
+        display: none;
+    }
+    main{
+        grid-column: 1/3;
+        border-left: none;
+        border-top: 2px var(--medium-color) solid;
+        grid-row: 3/4;
     }
 }
