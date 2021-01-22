@@ -505,11 +505,11 @@ div.social-contact a{
 }
 
 
-.light-mode, .light-mode nav, .light-mode header, .light-mode footer, .light-mode #work-modal, .light-mode #language-modal, .light-mode .social{
+.light-mode, .light-mode nav, .light-mode header, .light-mode footer, .light-mode #work-modal, .light-mode #language-modal, .light-mode .social, .light-mode .top-bar{
     background-color: var(--light-color);
     color: var(--dark-color);
 }
-.light-mode a, .light-mode #cli input, .light-mode #cli span, .light-mode .tagline, .light-mode .modal div, .light-mode .modal div h3{
+.light-mode a, .light-mode #cli input, .light-mode #cli span, .light-mode .tagline, .light-mode .modal div, .light-mode .modal div h3, .light-mode .top-bar{
     color: var(--dark-bg);
 }
 .light-mode a:hover{
