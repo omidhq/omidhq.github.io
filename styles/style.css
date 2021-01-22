@@ -259,12 +259,15 @@ footer a{
     position: absolute;
     bottom: 1rem;
     right: 0;
+    z-index: 9999;
+    padding-right: 2rem;
 }
 .social{
-    padding-right: 2rem;
+    margin-right: 1rem;
     display: flex;
     align-content: center;
     justify-content: flex-end;
+    background-color: var(--oxford-blue);
 }
 .social a{
     padding: 0.4rem 0.8rem;
@@ -486,9 +489,6 @@ footer a{
 #about-modal img{
     width: 80%;
     margin-left: 10%;
-}
-#work-modal{
-    background-color: #21252A;
 }
 #language-modal{
     background-color: #33415C;

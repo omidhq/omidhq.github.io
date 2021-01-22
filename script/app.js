@@ -1,3 +1,45 @@
+/////////// Modal
+function modalBox(event) {
+    event.preventDefault();
+    const target = event.target;
+    const modal = document.querySelectorAll('[class="modal open"]');
+    const hideTitle = document.getElementById("home-modal");
+    if (target.hasAttribute('data-window') && target.getAttribute('data-window') !== 'home-modal') {
+        const m_ID = target.getAttribute('data-window');
+        document.getElementById(m_ID).classList.add('open');
+        hideTitle.classList.add('hide-title');
+    }
+
+
+    for(let i=0; i < modal.length; i++){
+        if (target.classList.contains('home-icon')) {
+            modal[i].classList.remove('open');
+            hideTitle.classList.remove('hide-title');
+        } else if (target.classList.contains('about-icon')){
+            modal[i].classList.remove('open');
+            document.getElementById('about-modal').classList.add('open');
+        } else if (target.classList.contains('work-icon')){
+            modal[i].classList.remove('open');
+            document.getElementById('work-modal').classList.add('open');
+        } else if (target.classList.contains('language-icon')){
+            modal[i].classList.remove('open');
+            document.getElementById('language-modal').classList.add('open');
+        } else if (target.classList.contains('contact-me-icon')){
+            modal[i].classList.remove('open');
+            document.getElementById('contact-modal').classList.add('open');
+        } else if (target.classList.contains('fun-fact-icon')){
+            modal[i].classList.remove('open');
+            document.getElementById('fun-modal').classList.add('open');
+        }
+    }
+}
+let modalBtn = document.querySelectorAll('.icon');
+for(let i=0; i < modalBtn.length; i++){
+    modalBtn[i].addEventListener('click', modalBox);
+}
+
+
+
 window.onload = function() {
 
     let commandInput = document.querySelector('#command-input');
@@ -46,7 +88,7 @@ window.onload = function() {
                         setTimeout(function(){
                             para2.innerHTML = "&#10003; &nbsp; Formerly a UI Designer, I have a number of years experience designing web applications and enterprise websites. I particularly kept on Adobe Photoshop before spending most of my time implementing the layouts into static webpages using HTML5 and CSS3 with a blend of jQuery." +
                             "<br><br>&#10003; &nbsp; I also worked professionally as a Social Media Strategist and Online Media Specialist between 2013 to 2017 in Afghanistan as well as in Europe." +
-                            "<br><br>&#10003; &nbsp; <a href='#' title='A photo of me'>Here is a photo of me</a> || or maybe, simply <a href='#' title='My Instagram'>follow me on Instagram?</a> Just saying... :-)" +
+                            "<br><br>&#10003; &nbsp; I'm a student at <a href='https://hyperisland.com/' target='_blank'>Hyper Island</a> studying Frontend Development Program. It's basically writing codes for the website you're looking right now. If a website looks good, that's done by someone like me. If a website looks ugly, well, yes, it's also... || nevermind! Feel like <a href='https://twitter.com' target='_blank' title='My Twitter'>following me on Twitter?</a> I tend to write useful stuff ;-)" +
                             "<br><br>&#10003; &nbsp; Also, on a quick side note: &#169; Are you working on something interesting? &#8982; Looking for for a passionate team member? <a href='#'>Let's talk! &#9742;</a>"
                         }, 1500);
                         para2.innerHTML = "Takse a second... Thank you for your patience. <br>loading… ███████▒▒▒"
@@ -136,45 +178,6 @@ window.onload = function() {
         commandInput.value = null;
 });
 
-/////////// Modal
-function modalBox(event) {
-    event.preventDefault();
-    const target = event.target;
-    const modal = document.querySelectorAll('[class="modal open"]');
-    const hideTitle = document.getElementById("home-modal");
-    if (target.hasAttribute('data-window') && target.getAttribute('data-window') !== 'home-modal') {
-        const m_ID = target.getAttribute('data-window');
-        document.getElementById(m_ID).classList.add('open');
-        hideTitle.classList.add('hide-title');
-    }
-
-
-    for(let i=0; i < modal.length; i++){
-        if (target.classList.contains('home-icon')) {
-            modal[i].classList.remove('open');
-            hideTitle.classList.remove('hide-title');
-        } else if (target.classList.contains('about-icon')){
-            modal[i].classList.remove('open');
-            document.getElementById('about-modal').classList.add('open');
-        } else if (target.classList.contains('work-icon')){
-            modal[i].classList.remove('open');
-            document.getElementById('work-modal').classList.add('open');
-        } else if (target.classList.contains('language-icon')){
-            modal[i].classList.remove('open');
-            document.getElementById('language-modal').classList.add('open');
-        } else if (target.classList.contains('contact-me-icon')){
-            modal[i].classList.remove('open');
-            document.getElementById('contact-modal').classList.add('open');
-        } else if (target.classList.contains('fun-fact-icon')){
-            modal[i].classList.remove('open');
-            document.getElementById('fun-modal').classList.add('open');
-        }
-    }
-}
-let modalBtn = document.querySelectorAll('.icon');
-for(let i=0; i < modalBtn.length; i++){
-    modalBtn[i].addEventListener('click', modalBox);
-}
 
 
 
