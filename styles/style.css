@@ -96,9 +96,9 @@ nav .icon::after{
     transition: opacity 0.3s ease-in-out;
     z-index: 9999;
 }
-nav .icon.languages::after{
-    width: 9rem;
-    right:-11rem;
+nav .icon.language-icon::after{
+    width: 12rem;
+    right:-12.4rem;
 }
 nav .icon.contact-me::after{
     width: 9rem;
