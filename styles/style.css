@@ -505,7 +505,7 @@ div.social-contact a{
 }
 
 
-.light-mode, .light-mode nav, .light-mode header, .light-mode footer, .light-mode #work-modal, .light-mode #language-modal{
+.light-mode, .light-mode nav, .light-mode header, .light-mode footer, .light-mode #work-modal, .light-mode #language-modal, .light-mode .social{
     background-color: var(--light-color);
     color: var(--dark-color);
 }
