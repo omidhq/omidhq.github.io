@@ -3,18 +3,18 @@ $(document).ready(function(){
 
     setTimeout(function(){
 		$('.loader-section').addClass('move-right');
-	}, 1300);
+	}, 300);
 
     setTimeout(function(){
 		$('.dot-load').addClass('change-bg');
-	}, 1900);
+	}, 900);
 
 	setTimeout(function(){
 		$('.dot-loader').addClass('loaded');
-	}, 2000);
+	}, 000);
 
 	setTimeout(function(){
 		$('.pre-loader').addClass('loaded');
-	}, 2300);
+	}, 300);
 
 });
