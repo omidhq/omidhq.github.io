@@ -45,7 +45,7 @@ body{
 .page-wrapper{
     background-color: var(--dark-bg);
     display: grid;
-    grid-template-columns: 6rem minmax(25rem, 41%) minmax(30rem, 1fr);
+    grid-template-columns: 7rem minmax(25rem, 41%) minmax(30rem, 1fr);
     grid-template-rows: 3rem 1fr 5rem;
     height: 100%;
 }
@@ -442,9 +442,6 @@ footer a{
 
 
 
-
-
-
 .modal {
     position: absolute;
     bottom: 0;
@@ -454,11 +451,12 @@ footer a{
     opacity: 0;
     visibility: hidden;
     overflow: auto;
-    background-color: var(--dark-green);
     transition: all 0.3s ease-out;
+    scrollbar-color: var(--medium-color) var(--oxford-blue);
+    scrollbar-width: auto;
 }
 .modal div{
-    padding: 2rem;
+    padding: 4rem 2rem 2rem 3rem;
     color: var(--light-color);
 }
 .modal div a{
@@ -470,7 +468,7 @@ footer a{
     border-bottom-color: var(--white-color);
 }
 .modal div h3{
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: var(--white-color);
 }
 *::-webkit-scrollbar-track{
