@@ -14,20 +14,12 @@
     --wght-bold: 700;
   
     /* colors */
-    --true-blue: #0466c8ff;
-    --usafa-blue: #0353a4ff;
-    --dark-cornflower-blue: #023e7d;
-    --oxford-blue: #002855ff;
+    --oxford-blue: #002855;
     --dark-bg: #001233;
-    --independence: #33415cff;
-    --black-coral: #5c677dff;
-    --roman-silver: #7d8597ff;
-    --manatee: #979dacff;
     --dark-color: #1D3557;
     --medium-color: #457b9d;
     --light-color: #a8dadc;
     --white-color: rgb(241, 250, 238);
-    --red: rgb(230, 57, 70);
 }
 
 /* Basic Default Elements */
@@ -45,7 +37,7 @@ body{
 .page-wrapper{
     background-color: var(--dark-bg);
     display: grid;
-    grid-template-columns: 7rem minmax(25rem, 41%) minmax(30rem, 1fr);
+    grid-template-columns: 7rem minmax(25rem, 42%) minmax(30rem, 1fr);
     grid-template-rows: 4.4rem 1fr 4.5rem;
     height: 100%;
 }
