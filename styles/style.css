@@ -591,6 +591,9 @@ div.social-contact a{
     .log p{
         font-size: 1.1rem;
     }
+    .log a{
+        font-size: 1.1rem;
+    }
     #cli{
         grid-template-columns: 1fr;
     }
