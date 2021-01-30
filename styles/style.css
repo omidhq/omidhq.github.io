@@ -506,10 +506,15 @@ div.social-contact a{
     background-color: var(--light-color);
     color: var(--dark-color);
 }
+.light-mode main{
+    background-color: #7ac5ce;
+    color: var(--dark-bg);
+}
+
 .light-mode a, .light-mode #cli input, .light-mode #cli label, .light-mode .tagline, .light-mode .modal div, .light-mode .modal div h3, .light-mode .top-bar{
     color: var(--dark-bg);
 }
-.light-mode a:hover{
+.light-mode a:hover, .light-mode a:active, .light-mode a.current, .light-mode a:focus{
     color: var(--medium-color)
 }
 
@@ -623,10 +628,6 @@ div.social-contact a{
         background-color: var(--light-color);
         color: var(--dark-color);
     }
-    .light-mode main{
-        background-color: #7ac5ce;
-        color: var(--dark-bg);
-    }
     .light-mode .top-bar{
         border-top: none;
         border-bottom: 2px solid var(--medium-color);
@@ -659,7 +660,7 @@ div.social-contact a{
         padding-top: 0;
     }
     .log p{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .log a{
         font-size: 1rem;
@@ -668,7 +669,7 @@ div.social-contact a{
         font-size: 1rem;
     }
     #cli input{
-        font-size: 1.1rem
+        font-size: 1rem
     }
     footer p{
         font-size: 0.9rem;
