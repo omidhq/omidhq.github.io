@@ -46,7 +46,7 @@ body{
     background-color: var(--dark-bg);
     display: grid;
     grid-template-columns: 7rem minmax(25rem, 41%) minmax(30rem, 1fr);
-    grid-template-rows: 3rem 1fr 5rem;
+    grid-template-rows: 4.4rem 1fr 4.5rem;
     height: 100%;
 }
 
@@ -108,6 +108,10 @@ nav .icon:hover::after{
     visibility: visible;
     opacity: 1;
 }
+nav .icon span{
+    font-size: 0.01px;
+    visibility: hidden;
+}
 
 
 
@@ -155,6 +159,9 @@ h2.tagline{
     color: var(--light-color);
     transition: all 0.3s ease-in-out;
 }
+h2.tagline span{
+    display: block;
+}
 header svg{
     fill: var(--dark-bg);
     height: 20rem;
@@ -173,9 +180,8 @@ header svg{
 }
 .top-bar p{
     margin-bottom: 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--medium-color);
-    opacity: 0.8;
 }
 
 main{
@@ -227,6 +233,7 @@ main{
 }
 #cli span{
     padding: 1rem 0 0 2rem;
+    font-size: 1.45rem
 }
 #cli input{
     font-size: 1.5rem;
@@ -539,9 +546,6 @@ div.social-contact a{
     h2.tagline{
         font-size:1.6rem;
         line-height: 1.5;
-    }
-    h2.tagline span{
-        display: block;
     }
     header svg{
         display: none;

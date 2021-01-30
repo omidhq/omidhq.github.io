@@ -41,23 +41,23 @@
     </div>
 
     <div class="page-wrapper">
-        <nav>
-            <a data-window="home-modal" class="icon home-icon" href="#" data-tooltip="> clear"><i class="fas fa-terminal"></i></a>
-            <a data-window="about-modal"  class="icon about-icon" href="#" data-tooltip="About Me"><i class="far fa-id-card"></i></a>
-            <a data-window="work-modal" class="icon work-icon" href="#" data-tooltip="My Works"><i class="fas fa-project-diagram"></i></a>
-            <a data-window="contact-modal" class="icon contact-me-icon" href="#" data-tooltip="Contact Me"><i class="fas fa-at"></i></a>
-            <a data-window="language-modal" class="icon language-icon" href="#" data-tooltip="My Writings"><i class="fas fa-language"></i></a>
-            <a data-window="fun-modal" class="icon fun-fact-icon" href="#" data-tooltip="Fun Facts"><i class="fas fa-glass-cheers"></i></a>
+        <nav role="tab" aria-label="navigation">
+            <a data-window="home-modal" class="icon home-icon" href="#" aria-label="Go to the beginning" data-tooltip="> clear" tabindex="0"><i class="fas fa-terminal"></i></a>
+            <a data-window="about-modal"  class="icon about-icon" href="#" aria-label="About Me" data-tooltip="About Me"><i class="far fa-id-card"></i></a>
+            <a data-window="work-modal" class="icon work-icon" href="#" aria-label="My Works" data-tooltip="My Works"><i class="fas fa-project-diagram"></i></a>
+            <a data-window="contact-modal" class="icon contact-me-icon" aria-label="Contact Me" href="#" data-tooltip="Contact Me"><i class="fas fa-at"></i></a>
+            <a data-window="language-modal" class="icon language-icon" aria-label="My Writings" href="#" data-tooltip="My Writings"><i class="fas fa-language"></i></a>
+            <a data-window="fun-modal" class="icon fun-fact-icon" href="#" aria-label="Fun Facts" data-tooltip="Fun Facts"><i class="fas fa-glass-cheers"></i></a>
         </nav>
-        <header id="home-modal">
+        <header id="home-modal" aria-label="For Web Accessibility Initiative">
             <div class="title">
                 <h1>
                     <a href="#">Omid Haqbin</a>
                 </h1>
-                <h2 class="tagline"><span>> Frontend Developer </span><br><span>> Aspiring Programmer </span><br><span>> Wannabe Storyteller</span></h2>
+                <h2 class="tagline"><span>> Frontend Developer </span><span>> Aspiring Programmer </span><span>> Wannabe Storyteller</span></h2>
             </div>
 
-            <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="50 70 750 484.7">
+            <svg aria-label="a small smiley illustration follows your mouse" id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="50 70 750 484.7">
 
                 <g id="eyes" class="eyes">
                     <path class="cls-1" d="M250.7,338.85c6,3.29,12.32,6.34,19.2,7.19,6,.75,12.43-.37,17.31-4.09,1.52-1.15,0-3.76-1.51-2.59-10.29,7.85-23.53,2.35-33.49-3.1-1.69-.93-3.21,1.66-1.51,2.59Z" transform="translate(-89.74 -157.73)"/>
@@ -73,17 +73,18 @@
 
             <div class="nav-footer">
                 <div class="social">
-                    <a href="https://github.com/omidhq" title="Follow me on Github"><i class="fab fa-github-alt"></i></a>
-                    <a href="https://twitter.com/omidhq" title="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/omidhaqbin/" title="Follow me on Linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:omid.haqbin@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://github.com/omidhq" aria-label="Follow me on Github"><i class="fab fa-github-alt"></i></a>
+                    <a href="https://twitter.com/omidhq" aria-label="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/omidhaqbin/" aria-label="Follow me on Linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:omid.haqbin@gmail.com" aria-label="Send me an email"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
 
             <div id="about-modal" class="modal">
                 <div>
-                    <h3>Hi! Did you know my name, Omid, means <i>Hope</i> in Farsi?</h3>
-                    <p>I always have it with me ☺️</p>
+                    <h3>Did you know...</h3>
+                    <strong>My name, Omid, means <i>Hope</i> in Farsi? 👉 I always have it with me!</strong>
+                    <p>Hi! Welcome to my portfolio website</p>
                     <img src="images/omid.png" alt="A portrait of Omid smiling to the camera" />
                     <p>&#10003; &nbsp; Currently I'm a student at <a href='https://hyperisland.com/' target='_blank'>Hyper Island</a> studying <a href="https://www.hyperisland.com/programs-and-courses/frontend-developer">Frontend Developer Program.</a> The FED program is to learn writing codes for the interface of the websites where a user/client interact with it. If a website looks good, that's done by someone like me. If a website looks ugly, well, yes, it's also... || nevermind! Feel like <a href='https://twitter.com' target='_blank' title='My Twitter'>following me on Twitter?</a> I tend to write useful stuff 😉</p>
                     <p>&#10003; &nbsp; Formerly a UI Designer, I have a number of years experience designing web applications and enterprise websites. I particularly kept on Adobe Photoshop before spending most of my time implementing the layouts into static webpages using HTML5 and CSS3 with a blend of jQuery.</p>
@@ -139,7 +140,7 @@
                     <br><br>
                     <p>Want to discuss an idea? Have a job opportunity? Thinking about collaboration?<br> Or perhaps want to talk about literature ;-)?  </p>
                     <p><strong>Don't hesitate a second to reach out! I would be more than happy to hear from you! Just drop me an email!</strong></p>
-                    <p>💌 omid.haqbin@hyperisland.se</p>
+                    <p>💌 omid.haqbin@gmail.com</p>
                     <br><br>
                     <h3>Hey! Before I forget, it would be nice to see you around:</h3>
                     
@@ -184,8 +185,8 @@
             </div>
 
             <form id="cli">
-                <span>omid.haqbin@hyperisland.se:~$</span>
-                <input id="command-input" autofocus="autofocus" type="text" autocomplete="off" placeholder="_">
+                <label for="terminal">omid.haqbin@gmail.com ~ %</label>
+                <input id="command-input" autofocus="autofocus" type="text" autocomplete="off" placeholder="_" name="terminal">
                 <button id="submit">Submit</button>
             </form>
         </main>
