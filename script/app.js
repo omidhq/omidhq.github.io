@@ -164,13 +164,14 @@ window.onload = function() {
             case "clear":
                 outputDiv.firstElementChild.innerHTML = "";
                 break;
-                case "help":
-                case "ls":
-                para.innerHTML = "<strong>about</strong> &ensp; prints a short introduction of me" +
-                "<br><strong>help</strong> &ensp;&ensp; shows this message. An overview of all the commands." +
-                "<br><strong>work</strong> &ensp;&ensp;&ensp;&ensp; a list of some of my previous works"+
-                "<br><br>Some more commands:  &ensp;&ensp;&ensp;&ensp; 'light mode'  &ensp;&ensp;&ensp;&ensp; 'dark mode'  &ensp;&ensp;&ensp;&ensp; 'cv'  &ensp;&ensp;&ensp;&ensp; 'fun'  &ensp;&ensp;&ensp;&ensp; 'svenska'  &ensp;&ensp;&ensp;&ensp; 'farsi'  &ensp;&ensp;&ensp;&ensp; 'secret'"
-                ;
+            case "help":
+            case "ls":
+                para.innerHTML = "&#x7B;*For more visual content please click through the icons on the left side in your desktop browser*&#x7D;" + 
+                "<br /><br /><strong>help</strong> &#x2E3A;&#xFF1E; shows this message. An overview of all the commands." +
+                "<br><strong>about</strong> &#x2E3A;&#xFF1E; prints a short introduction of me" +
+                "<br><strong>ls</strong> &#x2E3A;&#xFF1E; prints all the commands without the descriptions." +
+                "<br><strong>work</strong> &#x2E3A;&#xFF1E; a list of some of my previous works"+
+                "<br><br>More commands:<br /> light mode  &#x2016; dark mode  &#x2016; cv  &#x2016; fun  &#x2016; svenska  &#x2016; farsi  &#x2016; secret";
                 break;
             default:
                 para.innerHTML = "<strong>Error:</strong> &ensp;<i>'" + 
