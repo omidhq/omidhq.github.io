@@ -612,11 +612,13 @@ div.social-contact a{
     }
     footer a{
         display: inline;
+        color: var(--white-color);
     }
     footer p{
         font-size: 0.9rem;
         line-height: 1.2;
         padding: 0.5rem 1rem 0.5rem 1.2rem;
         text-align: left;
+        color: var(--light-color);
     }
 }
