@@ -174,7 +174,7 @@ window.onload = function() {
                 break;
             default:
                 para.innerHTML = "<strong>Error:</strong> &ensp;<i>'" + 
-                commandInput.value + "'</i> is not a command. Type <i>'help'</i> for the list of available commands.<span style='font-size:2rem; font-weight: bold;'>&#x21bb;</span>"
+                commandInput.value + "'</i> is not a command. Type <i>'help'</i> for the list of available commands."
         }
         commandInput.value = null;
 });
