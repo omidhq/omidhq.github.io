@@ -527,7 +527,7 @@ div.social-contact a{
 @media only screen and (max-width: 912px) {
     .page-wrapper{
         grid-template-columns: 1fr;
-        grid-template-rows: 10rem 2rem 1fr;
+        grid-template-rows: 12rem 2.4rem 1fr;
         background-color: var(--oxford-blue);
     }
     nav{
@@ -548,13 +548,13 @@ div.social-contact a{
         align-items: flex-start;
     }
     .title h1{
-        font-size: 2.4rem;
+        font-size: 3rem;
         opacity: 1;
         margin-bottom: 0rem;
         line-height: 1.2;
     }
     h2.tagline{
-        font-size:1rem;
+        font-size:1.4rem;
         margin-bottom: 0;
     }
     h2.tagline span{
@@ -572,7 +572,7 @@ div.social-contact a{
         border-bottom: none;
     }
     .top-bar p{
-        font-size: 0.88rem;
+        font-size: 1.1rem;
         line-height: 1.2;
     }
     header svg, .pre-loader, .dot-loader{
@@ -589,23 +589,23 @@ div.social-contact a{
         padding: 0 1rem 0 1.2rem;
     }
     .log p{
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     .log a{
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     #cli{
         grid-template-columns: 1fr;
     }
     #cli label{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding-left: 1.2rem;
         padding-bottom: 0.4rem;
     }
     #cli input{
         overflow: hidden;
         padding-left: 1.2rem;
-        font-size:1.2rem;
+        font-size:1.4rem;
     }
 
     footer{
@@ -618,10 +618,39 @@ div.social-contact a{
         color: var(--white-color);
     }
     footer p{
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.2;
-        padding: 0.5rem 1rem 0.5rem 1.2rem;
+        padding: 1rem 1rem 1rem 1.2rem;
         text-align: left;
         color: var(--light-color);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .page-wrapper{
+        grid-template-rows: 10rem 2rem 1fr;
+    }
+    .title h1{
+        font-size: 2.4rem;
+    }
+
+    h2.tagline{
+        font-size:1rem;
+    }
+    .top-bar p{
+        font-size: 0.88rem;
+    }
+    .log p{
+        font-size: 1.1rem;
+    }
+    .log a{
+        font-size: 1.1rem;
+    }
+    #cli label{
+        font-size: 1.1rem;
+    }
+    footer p{
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem 0.5rem 1.2rem;
     }
 }
