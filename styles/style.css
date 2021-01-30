@@ -506,7 +506,7 @@ div.social-contact a{
     background-color: var(--light-color);
     color: var(--dark-color);
 }
-.light-mode a, .light-mode #cli input, .light-mode #cli span, .light-mode .tagline, .light-mode .modal div, .light-mode .modal div h3, .light-mode .top-bar{
+.light-mode a, .light-mode #cli input, .light-mode #cli label, .light-mode .tagline, .light-mode .modal div, .light-mode .modal div h3, .light-mode .top-bar{
     color: var(--dark-bg);
 }
 .light-mode a:hover{
@@ -519,7 +519,7 @@ div.social-contact a{
 @media only screen and (max-width: 912px) {
     .page-wrapper{
         grid-template-columns: 1fr;
-        grid-template-rows: 12rem 2.4rem 1fr;
+        grid-template-rows: 12.8rem 3.2rem 1fr;
         background-color: var(--oxford-blue);
     }
     nav{
@@ -540,13 +540,13 @@ div.social-contact a{
         align-items: flex-start;
     }
     .title h1{
-        font-size: 3rem;
+        font-size: 3.2rem;
         opacity: 1;
         margin-bottom: 0rem;
         line-height: 1.2;
     }
     h2.tagline{
-        font-size:1.4rem;
+        font-size:1.5rem;
         margin-bottom: 0;
     }
     h2.tagline span{
@@ -559,12 +559,13 @@ div.social-contact a{
         grid-row: 2/3;
         grid-column: 1/2;
         padding:0 1rem 0 1.2rem;
-        border-top: 1px solid var(--medium-color);
+        border-top: 2px solid var(--medium-color);
         background-color: var(--dark-bg);
         border-bottom: none;
+
     }
     .top-bar p{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.2;
     }
     header svg, .pre-loader, .dot-loader{
@@ -576,6 +577,7 @@ div.social-contact a{
         background-color: var(--dark-bg);
         grid-row: 3/4;
         grid-column: 1/2;
+        padding-top: 1rem;
     }
     .log{
         padding: 0 1rem 0 1.2rem;
@@ -616,30 +618,57 @@ div.social-contact a{
         text-align: left;
         color: var(--light-color);
     }
+
+    .light-mode footer, .page-wrapper.light-mode{
+        background-color: var(--light-color);
+        color: var(--dark-color);
+    }
+    .light-mode main{
+        background-color: #7ac5ce;
+        color: var(--dark-bg);
+    }
+    .light-mode .top-bar{
+        border-top: none;
+        border-bottom: 2px solid var(--medium-color);
+    }
+    .light-mode .top-bar p, .light-mode footer p{
+        color: var(--dark-color);
+    }
+    .light-mode a{
+        text-decoration: underline;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .page-wrapper{
-        grid-template-rows: 10rem 2rem 1fr;
+        grid-template-rows: 8.8rem 2rem 1fr;
     }
     .title h1{
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
-
+    .title h1 a{
+        padding: 0 1rem 0.2rem 0
+    }
     h2.tagline{
-        font-size:1rem;
+        font-size:0.98rem;
     }
     .top-bar p{
         font-size: 0.88rem;
+    }
+    main{
+        padding-top: 0;
     }
     .log p{
         font-size: 1.1rem;
     }
     .log a{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     #cli label{
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    #cli input{
+        font-size: 1.1rem
     }
     footer p{
         font-size: 0.9rem;
