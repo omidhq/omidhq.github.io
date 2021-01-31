@@ -80,7 +80,8 @@ window.onload = function() {
             case "about":
             case "omid":
             case "you":
-                para.innerHTML = "Happy to introduce myself :-)";
+                para.innerHTML = "Did you know my name, Omid, means Hope in Farsi? I always have hope with me ;-) " +
+                "<br />Welcome to my portfolio website &#x261F;";
                 const para2 = document.createElement('p');
                 outputDiv.firstElementChild.appendChild(para2);
                 setTimeout(function(){
@@ -97,6 +98,7 @@ window.onload = function() {
                 }, 500);
                 break;
             case "work":
+            case "works":
                 para.innerHTML = "<strong>Currently:</strong>  &nbsp; <br>&#9733; &nbsp; Full-time student at <a href='https://hyperisland.com' target='_blank'>Hyper Island</a> + part-time working on my <a href='https://omidhaqbin.com/'>Personal Portfolio</a>" +
                 "<br><br><strong>Previously:</strong><br>&#9733;  &nbsp; Webmaster and Social Media Consultant at Internews Europe in Athens, Greece." +
                 "<br>&#9733; &nbsp; Social Media Strategiest at Impassion, U.S. Embassy-funded project, in Kabul, Afghanistan." +
@@ -131,8 +133,8 @@ window.onload = function() {
                 break;
             case "fun":
                 para.classList.add("fun");
-                para.innerHTML = "<strong>Fun facts:</strong><br></br>1. &nbsp; I love typing, either it's to code or writing a new short story." +
-                "<br>2.  &nbsp; Check back later for more ;-)";
+                para.innerHTML = "<strong>Fun facts:</strong><br></br>I love writing, either codes or a new short story." +
+                "<br>Check back later for more ;-)";
                 break;
             case "cv":
                     para.innerHTML = "&#10515; &nbsp; <strong>Ready for download:</strong> &nbsp;My complete resume as <a href='#' title='My Resume'><strong>a PDF file.</strong></a>";
@@ -165,17 +167,30 @@ window.onload = function() {
                 outputDiv.firstElementChild.innerHTML = "";
                 break;
             case "help":
-            case "ls":
-                para.innerHTML = "&#x7B;*For more visual content please click through the icons on the left side in your desktop browser*&#x7D;" + 
-                "<br /><br /><strong>help</strong> &#x2E3A;&#xFF1E; shows this message. An overview of all the commands." +
+            case "-h":
+                para.innerHTML = "<strong>help</strong> &#x2E3A;&#xFF1E; shows this message. An overview of all the commands." +
                 "<br><strong>about</strong> &#x2E3A;&#xFF1E; prints a short introduction of me" +
-                "<br><strong>ls</strong> &#x2E3A;&#xFF1E; prints all the commands without the descriptions." +
+                "<br><strong>ls</strong> &#x2E3A;&#xFF1E; prints avialable commands without their description." +
                 "<br><strong>work</strong> &#x2E3A;&#xFF1E; a list of some of my previous works"+
-                "<br><br>More commands:<br /> light mode  &#x2016; dark mode  &#x2016; cv  &#x2016; fun  &#x2016; svenska  &#x2016; farsi  &#x2016; secret";
+                "<br><br>More commands:<br /> light mode  &#x2016; dark mode  &#x2016; cv &#x2016; version &#x2016; gdpr &#x2016; fun  &#x2016; svenska  &#x2016; farsi  &#x2016; secret" +
+                "<br /><br />&#x7B;*For more visual content please click through the icons on the left side in your desktop browser*&#x7D;"
+                break;
+            case "version":
+            case "-v":
+                para.innerHTML = "omidhaqbin.com 1.2 (beta version) <br />A personal portfolio website"
+                break;
+            case "ls":
+                para.innerHTML = "Some of the commands are:<br /> help &#x2016; about &#x2016; ls &#x2016; work &#x2016; light mode  &#x2016; dark mode  &#x2016; cv &#x2016; version &#x2016; " + 
+                "gdpr &#x2016; fun  &#x2016; svenska  &#x2016; farsi  &#x2016; secret"
+                break;
+            case "gdpr":
+                para.innerHTML = "This website does use GA to track and analyze the number of users who pay my website a visit. Having GA is mainly out of curiosity and for personal use. " + 
+                "I'm not sharing its information with any company nor it has commercial/advertising purposes. Except for GA and other cookies for performance enhancement, this website doesn't use other (particularly targeting) cookies. " +
+                "<br />With that being, if you don't want GA to track your browser, you can simply close the tab in your browser window."
                 break;
             default:
                 para.innerHTML = "<strong>Error:</strong> &ensp;<i>'" + 
-                commandInput.value + "'</i> is not a command. Type <i>'help'</i> for the list of available commands."
+                commandInput.value + "'</i> is not a command. ٌWrite <i>'help'</i> for the list of available commands."
         }
         commandInput.value = null;
 });
