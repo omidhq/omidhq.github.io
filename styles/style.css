@@ -563,6 +563,9 @@ div.social-contact a{
     border-bottom:none;
     text-decoration: none;
 }
+.light-mode .title a{
+    text-decoration: none;
+}
 
 
 
