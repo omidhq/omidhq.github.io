@@ -81,16 +81,16 @@ window.onload = function() {
             case "omid":
             case "you":
                 para.innerHTML = "Did you know my name, Omid, means Hope in Farsi? I always have hope with me ;-) " +
-                "<br />Welcome to my portfolio website &#x261F;";
+                "<br />Hi! Welcome to my portfolio website :-)&#x261F;";
                 const para2 = document.createElement('p');
                 outputDiv.firstElementChild.appendChild(para2);
                 setTimeout(function(){
                     setTimeout(function(){
                         setTimeout(function(){
-                            para2.innerHTML = "&#10003; &nbsp; Formerly a UI Designer, I have a number of years experience designing web applications and enterprise websites. I particularly kept on Adobe Photoshop before spending most of my time implementing the layouts into static webpages using HTML5 and CSS3 with a blend of jQuery." +
+                            para2.innerHTML = "&#10003; &nbsp; Currently, I'm a student at <a href='https://hyperisland.com/' target='_blank'>Hyper Island</a> studying <a href='https://en.wikipedia.org/wiki/Front-end_web_development' target='_blank'>Frontend Developer Program</a>. The FED program is to learn writing codes for the interface of websites and web applications. Putting it into context, '<i>a front-end developer is responsible for the interior design of a house that’s been built by a back-end developer.</i>'" +
+                            "<br><br>&#10003; &nbsp; Formerly a UI Designer, I have a number of years experience designing web applications and enterprise websites. I particularly kept on Adobe Photoshop before spending most of my time implementing the layouts into static webpages using HTML5 and CSS3 with a blend of jQuery." +
                             "<br><br>&#10003; &nbsp; I also worked professionally as a Social Media Strategist and Online Media Specialist between 2013 to 2017 in Afghanistan as well as in Europe." +
-                            "<br><br>&#10003; &nbsp; I'm a student at <a href='https://hyperisland.com/' target='_blank'>Hyper Island</a> studying Frontend Development Program. It's basically writing codes for the website you're looking right now. If a website looks good, that's done by someone like me. If a website looks ugly, well, yes, it's also... || nevermind! Feel like <a href='https://twitter.com' target='_blank' title='My Twitter'>following me on Twitter?</a> I tend to write useful stuff ;-)" +
-                            "<br><br>&#10003; &nbsp; Also, on a quick side note: &#169; Are you working on something interesting? &#8982; Looking for for a passionate team member? <a href='#'>Let's talk! &#9742;</a>"
+                            "<br><br>&#10003; &nbsp; On a quick side note: if you are working on something interesting or looking for a passionate team member, give me a buzz at omid.haqbin@gmail.com. Maybe we could work out how to collaborate together.</a>"
                         }, 1500);
                         para2.innerHTML = "Takse a second... Thank you for your patience. <br>loading… ███████▒▒▒"
                     }, 1500);

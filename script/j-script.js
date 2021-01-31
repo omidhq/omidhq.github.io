@@ -11,10 +11,10 @@ $(document).ready(function(){
 
 	setTimeout(function(){
 		$('.dot-loader').addClass('loaded');
-	}, 000);
+	}, 1000);
 
 	setTimeout(function(){
 		$('.pre-loader').addClass('loaded');
-	}, 300);
+	}, 1200);
 
 });
