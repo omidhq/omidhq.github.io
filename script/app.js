@@ -99,12 +99,12 @@ window.onload = function() {
                 break;
             case "work":
             case "works":
-                para.innerHTML = "<strong>Currently:</strong>  &nbsp; <br>&#9733; &nbsp; Full-time student at <a href='https://hyperisland.com' target='_blank'>Hyper Island</a> + part-time working on my <a href='https://omidhaqbin.com/'>Personal Portfolio</a>" +
+                para.innerHTML = "<strong>Currently:</strong>  &nbsp; <br>&#9733; &nbsp; Full-time student at <a href='https://hyperisland.com' target='_blank'>Hyper Island</a> studying Frontend Developer program.</a>" +
                 "<br><br><strong>Previously:</strong><br>&#9733;  &nbsp; Webmaster and Social Media Consultant at Internews Europe in Athens, Greece." +
                 "<br>&#9733; &nbsp; Social Media Strategiest at Impassion, U.S. Embassy-funded project, in Kabul, Afghanistan." +
                 "<br>&#9733; &nbsp; Web and Online Media Consultant in TAFA Project at USAID in Kabul." +
                 "<br>&#9733; &nbsp; UI/UX Intern at Tech Sharks in Kabul." + 
-                "<br><br>You can visit <a href='https://works.omidhaqbin.com/' target='_blank'>www.works.omidhaqbin.com</a> for more information"
+                "<br><br>You can visit <a href='https://work.omidhaqbin.com/'>www.work.omidhaqbin.com</a> for more information"
                 break
             case "contact":
                 para.innerHTML = "&#10687; &nbsp; Have a question?<br>" +
