@@ -69,7 +69,7 @@ nav .icon::before{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 nav .icon::after{
     content: attr(data-tooltip);
@@ -86,7 +86,7 @@ nav .icon::after{
     visibility: hidden;
     opacity:0;
     transition: opacity 0.3s ease-in-out;
-    z-index: 9999;
+    z-index: 99;
 }
 nav .icon.language-icon::after{
     width: 12rem;
@@ -103,6 +103,30 @@ nav .icon:hover::after{
 nav .icon span{
     font-size: 0.01px;
     visibility: hidden;
+}
+nav .work-icon{
+    position: relative;
+}
+nav .work-icon::after{
+    content: attr(data-tooltip);
+    position:absolute;
+    width: 8.4rem;
+    font-size: 1.4rem;
+    text-align: center;
+    top:2rem;
+    right: -8.5rem;
+    padding:3px 6px;
+    border-radius:3px;
+    background:var(--white-color);
+    color:var(--dark-color);
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 99;
+}
+nav .work-icon:hover::after{
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -487,8 +511,8 @@ footer a{
     visibility: visible;
 }
 #about-modal img{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    max-width: 50rem;
 }
 
 div.social-contact{
